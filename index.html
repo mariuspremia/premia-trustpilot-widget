@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>Premia Solutions Reviews</title>
+
+  <title>Premia Solutions Customer Reviews</title>
 
   <script
     src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
@@ -13,34 +13,113 @@
   </script>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
-      background: #ffffff;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
+      background: transparent;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .reviews {
+    body {
+      padding: 8px;
+    }
+
+    .review-card {
       width: 100%;
-      min-height: 140px;
+      background: #FAFAF9;
+      border: 1px solid #E8E8E5;
+      border-radius: 18px;
+      padding: 18px 22px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.055);
+      overflow: hidden;
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .review-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      color: #20252B;
+    }
+
+    .review-subtitle {
+      margin: 4px 0 0;
+      font-size: 11px;
+      line-height: 1.4;
+      color: #747A80;
+    }
+
+    .trustpilot-widget {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 4px;
+      }
+
+      .review-card {
+        padding: 12px;
+        border-radius: 12px;
+      }
+
+      .review-title {
+        font-size: 13px;
+      }
+
+      .review-subtitle {
+        font-size: 10px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="reviews">
-    <div class="trustpilot-widget"
+
+  <section class="review-card">
+
+    <div class="review-header">
+      <div>
+        <h2 class="review-title">
+          Trusted by our customers
+        </h2>
+        <p class="review-subtitle">
+          Real experiences. Independent reviews.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="trustpilot-widget"
       data-locale="en-GB"
       data-template-id="53aa8912dec7e10d38f59f36"
       data-businessunit-id="5303b1060000640005783f1f"
       data-style-height="140px"
       data-style-width="100%"
       data-theme="light">
-      <a href="https://uk.trustpilot.com/review/www.premiasolutions.com"
-         target="_blank" rel="noopener">
-        Trustpilot
+
+      <a
+        href="https://uk.trustpilot.com/review/www.premiasolutions.com"
+        target="_blank"
+        rel="noopener">
+        Read our reviews on Trustpilot
       </a>
+
     </div>
-  </div>
+
+  </section>
+
 </body>
 </html>
